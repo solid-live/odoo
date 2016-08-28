@@ -35,6 +35,8 @@
 
   <div class="js-odoo"></div>
   <script src="odoo.js"></script>
-  <script>odoo.default({ el:".js-odoo",value:"£40,000,000" })</script>
+  <script>
+  var amount = Math.floor(Math.random() * 40 + 20)
+  odoo.default({ el:".js-odoo",value:"£" + amount + ",000,000" })</script>
 </body>
 </html>
